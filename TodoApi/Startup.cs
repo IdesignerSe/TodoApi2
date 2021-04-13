@@ -28,6 +28,8 @@ namespace TodoApi
         {
 
             services.AddControllers();
+            //Add services.AddDbContext
+            services.AddDbContext<VehicleContext>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });
